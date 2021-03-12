@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="ELSubmit.jsp" method="post" 
+    onsubmit="return check()">
+  User : <input type="text" id="user" name="user" value="mary"/><br/>
+  <input type="submit"/>     
+ </form>
+ <script>
+    function check(){
+        var u=document.getElementById("user");
+        if(u.value.length<5)
+        {
+            alert("String must > 5");
+            return false;
+        }
+        else
+            return true;
+    }
+ </script>
+</body>
+</html>
